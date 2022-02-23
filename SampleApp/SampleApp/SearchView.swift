@@ -33,7 +33,7 @@ struct SearchView: View {
                 Button(action: {
                     selection = 1
                 }, label: {
-                    Text("Show Color View")
+                    Text("Show Contacts View")
                         .foregroundColor(.black)
                         .padding(10)
                         .background(Color.green)
@@ -41,7 +41,7 @@ struct SearchView: View {
                 })
             }
         } else {
-            ColorView()
+            PhoneView()
         }
     }
     

@@ -14,6 +14,8 @@
 		C017FD4027C550C900E0CB02 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C017FD3F27C550C400E0CB02 /* ColorView.swift */; };
 		C017FD4227C5630600E0CB02 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C017FD4127C5630500E0CB02 /* SearchView.swift */; };
 		C051761C27C57CF300ED3884 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C051761B27C57CF300ED3884 /* TabsView.swift */; };
+		C051761E27C690D500ED3884 /* PhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C051761D27C690D500ED3884 /* PhoneView.swift */; };
+		C051762027C691C900ED3884 /* PhoneContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C051761F27C691C900ED3884 /* PhoneContacts.swift */; };
 		D89189BB4665A6644547862F /* Pods_SampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EC57F64A5173758EE66D3A /* Pods_SampleApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,8 @@
 		C017FD3F27C550C400E0CB02 /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 		C017FD4127C5630500E0CB02 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		C051761B27C57CF300ED3884 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
+		C051761D27C690D500ED3884 /* PhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneView.swift; sourceTree = "<group>"; };
+		C051761F27C691C900ED3884 /* PhoneContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneContacts.swift; sourceTree = "<group>"; };
 		C2EC57F64A5173758EE66D3A /* Pods_SampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -75,6 +79,8 @@
 			children = (
 				C017FD3027C549AB00E0CB02 /* SampleAppApp.swift */,
 				C017FD3227C549AC00E0CB02 /* ContentView.swift */,
+				C051761D27C690D500ED3884 /* PhoneView.swift */,
+				C051761F27C691C900ED3884 /* PhoneContacts.swift */,
 				C051761B27C57CF300ED3884 /* TabsView.swift */,
 				C017FD4127C5630500E0CB02 /* SearchView.swift */,
 				C017FD3F27C550C400E0CB02 /* ColorView.swift */,
@@ -216,10 +222,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C051761C27C57CF300ED3884 /* TabsView.swift in Sources */,
+				C051761E27C690D500ED3884 /* PhoneView.swift in Sources */,
 				C017FD4227C5630600E0CB02 /* SearchView.swift in Sources */,
 				C017FD4027C550C900E0CB02 /* ColorView.swift in Sources */,
 				C017FD3327C549AC00E0CB02 /* ContentView.swift in Sources */,
 				C017FD3127C549AB00E0CB02 /* SampleAppApp.swift in Sources */,
+				C051762027C691C900ED3884 /* PhoneContacts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
