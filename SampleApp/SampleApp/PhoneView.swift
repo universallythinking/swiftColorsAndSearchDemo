@@ -13,34 +13,53 @@ struct PhoneView: View {
     @State var numbers: [[String]] = [["START", "BEGIN"]]
     @State var active: Bool = false
     @State var selection = 0
+    @State var counter = 0
+    @State var phoneList: [String] = []
+    var colors = [Color.green, .red, .pink, .orange, .blue, .black]
+    var arr: [String] = []
 
     var body: some View {
-
         if (selection == 0) {
-            Text("\(numbers.count)")
+            Text("Select People")
+                .background(Color(.black))
+                .frame(width: .infinity, height: 50)
+                .padding(.all, 2)
+                .font(.system(size: 22))
             ScrollView {
                 ForEach (numbers.indices, id: \.self) { n in
-                    Text(numbers[n][0].description)
-                    Text(numbers[n][1].description)
-                    Spacer().id(n)
+                    HStack {
+                        Button(numbers[n][0].description) {
+                            PhoneContacts().editArray(numbers[n][1].description)
+                            phoneList.append(numbers[n][1].description)
+                        }
+                        .foregroundColor(
+                            phoneList.filter{$0 == numbers[n][1].description}.count % 2 == 1 ? Color(.green) : (n % 2 == 0) ? Color(.white) : Color(.white)
+                        )
+                        .background(Color(.black))
+                        .frame(width: .infinity, height: 50)
+                        .padding(.all, 2)
+                        .font(.system(size: 50))
+                        Spacer()
+                    }
+                    Divider().id(n)
+                    
                 }
             }
-            Button("Search") {
-                numbers = PhoneContacts().getContacts()
-            }.frame(alignment: .center)
-            Spacer()
             .onAppear {
                 numbers = PhoneContacts().getContacts()
             }
+            Divider()
             Button(action: {
-                selection = 1
+                phoneList = PhoneContacts().arr
             }, label: {
-                Text("Show Color View")
-                    .foregroundColor(.black)
+                Text("Submit")
+                    .foregroundColor(.white)
                     .padding(10)
-                    .background(Color.green)
-                    .cornerRadius(10)
+                    .background(Color.black)
+                    .frame(width: .infinity, height: 50)
+                    .font(.system(size: 50))
             })
+            
         } else {
             ColorView()
         }
@@ -48,10 +67,9 @@ struct PhoneView: View {
 
     }
     
-    
-    
-    
 }
+
+
 
 // I deleted the content previews for sake of speed while debugging
 
