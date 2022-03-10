@@ -8,7 +8,7 @@
 import Foundation
 import ContactsUI
 
-class PhoneContacts {
+class PhoneLogic {
     var arr: [String] = []
     var counter = 0
     var colors = [UIColor.green, UIColor.red, UIColor.gray, UIColor.orange, UIColor.blue, UIColor.black]
@@ -16,7 +16,6 @@ class PhoneContacts {
     func getContacts() -> [[String]] {
         
         var contacts = [[String]]()
-        let status = CNContactStore.authorizationStatus(for: CNEntityType.contacts) as CNAuthorizationStatus
 
         let contactStore = CNContactStore()
         let keysToFetch = [

@@ -15,7 +15,8 @@
 		C017FD4227C5630600E0CB02 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C017FD4127C5630500E0CB02 /* SearchView.swift */; };
 		C051761C27C57CF300ED3884 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C051761B27C57CF300ED3884 /* CheckBoxView.swift */; };
 		C051761E27C690D500ED3884 /* PhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C051761D27C690D500ED3884 /* PhoneView.swift */; };
-		C051762027C691C900ED3884 /* PhoneContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C051761F27C691C900ED3884 /* PhoneContacts.swift */; };
+		C051762027C691C900ED3884 /* PhoneLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C051761F27C691C900ED3884 /* PhoneLogic.swift */; };
+		C0F62D9627DA497F002A51E7 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F62D9527DA497F002A51E7 /* TabsView.swift */; };
 		D89189BB4665A6644547862F /* Pods_SampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EC57F64A5173758EE66D3A /* Pods_SampleApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +33,8 @@
 		C017FD4127C5630500E0CB02 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		C051761B27C57CF300ED3884 /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
 		C051761D27C690D500ED3884 /* PhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneView.swift; sourceTree = "<group>"; };
-		C051761F27C691C900ED3884 /* PhoneContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneContacts.swift; sourceTree = "<group>"; };
+		C051761F27C691C900ED3884 /* PhoneLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneLogic.swift; sourceTree = "<group>"; };
+		C0F62D9527DA497F002A51E7 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabsView.swift; path = SampleApp/Tabs/TabsView.swift; sourceTree = SOURCE_ROOT; };
 		C2EC57F64A5173758EE66D3A /* Pods_SampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -77,13 +79,13 @@
 		C017FD2F27C549AB00E0CB02 /* SampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				C0F62D9A27DA4A01002A51E7 /* Tab */,
+				C0F62D9927DA49D7002A51E7 /* Colors */,
+				C0F62D9827DA49C8002A51E7 /* Search */,
+				C0F62D9727DA499E002A51E7 /* Phone */,
 				C017FD3027C549AB00E0CB02 /* SampleAppApp.swift */,
 				C017FD3227C549AC00E0CB02 /* ContentView.swift */,
-				C051761D27C690D500ED3884 /* PhoneView.swift */,
-				C051761F27C691C900ED3884 /* PhoneContacts.swift */,
 				C051761B27C57CF300ED3884 /* CheckBoxView.swift */,
-				C017FD4127C5630500E0CB02 /* SearchView.swift */,
-				C017FD3F27C550C400E0CB02 /* ColorView.swift */,
 				C017FD3427C549C800E0CB02 /* Assets.xcassets */,
 				C017FD3927C549C800E0CB02 /* Info.plist */,
 				C017FD3627C549C800E0CB02 /* Preview Content */,
@@ -97,6 +99,39 @@
 				C017FD3727C549C800E0CB02 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C0F62D9727DA499E002A51E7 /* Phone */ = {
+			isa = PBXGroup;
+			children = (
+				C051761D27C690D500ED3884 /* PhoneView.swift */,
+				C051761F27C691C900ED3884 /* PhoneLogic.swift */,
+			);
+			path = Phone;
+			sourceTree = "<group>";
+		};
+		C0F62D9827DA49C8002A51E7 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				C017FD4127C5630500E0CB02 /* SearchView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		C0F62D9927DA49D7002A51E7 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				C017FD3F27C550C400E0CB02 /* ColorView.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		C0F62D9A27DA4A01002A51E7 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				C0F62D9527DA497F002A51E7 /* TabsView.swift */,
+			);
+			path = Tab;
 			sourceTree = "<group>";
 		};
 		E7BEEEB6EFFC0AAEB521DA0E /* Pods */ = {
@@ -227,7 +262,8 @@
 				C017FD4027C550C900E0CB02 /* ColorView.swift in Sources */,
 				C017FD3327C549AC00E0CB02 /* ContentView.swift in Sources */,
 				C017FD3127C549AB00E0CB02 /* SampleAppApp.swift in Sources */,
-				C051762027C691C900ED3884 /* PhoneContacts.swift in Sources */,
+				C0F62D9627DA497F002A51E7 /* TabsView.swift in Sources */,
+				C051762027C691C900ED3884 /* PhoneLogic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

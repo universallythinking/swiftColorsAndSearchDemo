@@ -18,9 +18,12 @@ struct SearchView: View {
     
 
     var body: some View {
-        if (selection == 0) {
             VStack {
                 Text("Search Apple Music")
+                    .background(Color(.black))
+                    .frame(width: .infinity, height: 50)
+                    .padding(.all, 10)
+                    .font(.system(size: 22))
                 Spacer()
                 TextField("Enter search query", text: self.$searchQuery).frame(alignment: .center)
                 Spacer()
@@ -30,19 +33,7 @@ struct SearchView: View {
                 Spacer()
                 Text(self.result)
                 Spacer()
-                Button(action: {
-                    selection = 1
-                }, label: {
-                    Text("Show Contacts View")
-                        .foregroundColor(.black)
-                        .padding(10)
-                        .background(Color.green)
-                        .cornerRadius(10)
-                })
             }
-        } else {
-            PhoneView()
-        }
     }
     
     func searchApple() {
