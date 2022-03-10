@@ -9,31 +9,46 @@ import SwiftUI
 import Alamofire
 import SwiftyJSON
 
+extension UIApplication {
+    func endEditing() {
+        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
 
 struct SearchView: View {
     
     @State var selection = 0
     @State var searchQuery = ""
     @State var result = ""
-    
 
     var body: some View {
-            VStack {
-                Text("Search Apple Music")
-                    .background(Color(.black))
-                    .frame(width: .infinity, height: 50)
-                    .padding(.all, 10)
-                    .font(.system(size: 22))
-                Spacer()
-                TextField("Enter search query", text: self.$searchQuery).frame(alignment: .center)
-                Spacer()
-                Button("Search") {
-                    searchApple()
-                }.frame(alignment: .center)
-                Spacer()
-                Text(self.result)
-                Spacer()
+        //ZStack(alignment: .top){
+        VStack {
+            Text("Search Apple Music")
+                .background(Color(.black))
+                .frame(width: .infinity, height: 50)
+                .padding(.all, 10)
+                .font(.system(size: 22))
+            TextField("Enter search query: ", text: self.$searchQuery)
+                .frame(alignment: .center)
+                .padding(.horizontal, 30)
+                .padding(.top, 20).background(Color.black)
+            Text(self.result)
+            Spacer()
+            Button(action: {
+                searchApple()
+            }) {
+                HStack {
+                    Image(systemName: "magnifyingglass.circle.fill")
+                    Text("Search Apple Music")
+                }.padding(10.0)
+                .frame(maxWidth: .infinity)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 10.0)
+                        .stroke(lineWidth: 2.0)
+                )
             }
+        }
     }
     
     func searchApple() {
@@ -65,6 +80,11 @@ struct SearchView: View {
                 }
             }
         }
+        endEditing()
+    }
+    
+    func endEditing() {
+        UIApplication.shared.endEditing()
     }
 }
 

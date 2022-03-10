@@ -17,6 +17,8 @@
 		C051761E27C690D500ED3884 /* PhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C051761D27C690D500ED3884 /* PhoneView.swift */; };
 		C051762027C691C900ED3884 /* PhoneLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C051761F27C691C900ED3884 /* PhoneLogic.swift */; };
 		C0F62D9627DA497F002A51E7 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F62D9527DA497F002A51E7 /* TabsView.swift */; };
+		C0F62D9C27DA6069002A51E7 /* ColorButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F62D9B27DA6068002A51E7 /* ColorButtons.swift */; };
+		C0F62D9E27DA6662002A51E7 /* PhoneButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F62D9D27DA6662002A51E7 /* PhoneButtons.swift */; };
 		D89189BB4665A6644547862F /* Pods_SampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EC57F64A5173758EE66D3A /* Pods_SampleApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,8 @@
 		C051761D27C690D500ED3884 /* PhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneView.swift; sourceTree = "<group>"; };
 		C051761F27C691C900ED3884 /* PhoneLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneLogic.swift; sourceTree = "<group>"; };
 		C0F62D9527DA497F002A51E7 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabsView.swift; path = SampleApp/Tabs/TabsView.swift; sourceTree = SOURCE_ROOT; };
+		C0F62D9B27DA6068002A51E7 /* ColorButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorButtons.swift; sourceTree = "<group>"; };
+		C0F62D9D27DA6662002A51E7 /* PhoneButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneButtons.swift; sourceTree = "<group>"; };
 		C2EC57F64A5173758EE66D3A /* Pods_SampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -106,6 +110,7 @@
 			children = (
 				C051761D27C690D500ED3884 /* PhoneView.swift */,
 				C051761F27C691C900ED3884 /* PhoneLogic.swift */,
+				C0F62D9D27DA6662002A51E7 /* PhoneButtons.swift */,
 			);
 			path = Phone;
 			sourceTree = "<group>";
@@ -122,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				C017FD3F27C550C400E0CB02 /* ColorView.swift */,
+				C0F62D9B27DA6068002A51E7 /* ColorButtons.swift */,
 			);
 			path = Colors;
 			sourceTree = "<group>";
@@ -262,6 +268,8 @@
 				C017FD4027C550C900E0CB02 /* ColorView.swift in Sources */,
 				C017FD3327C549AC00E0CB02 /* ContentView.swift in Sources */,
 				C017FD3127C549AB00E0CB02 /* SampleAppApp.swift in Sources */,
+				C0F62D9E27DA6662002A51E7 /* PhoneButtons.swift in Sources */,
+				C0F62D9C27DA6069002A51E7 /* ColorButtons.swift in Sources */,
 				C0F62D9627DA497F002A51E7 /* TabsView.swift in Sources */,
 				C051762027C691C900ED3884 /* PhoneLogic.swift in Sources */,
 			);
